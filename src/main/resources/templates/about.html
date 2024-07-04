@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" data-th-href="@{/css/output.css}"/>
+</head>
+
+<body>
+    <div class="bg-red-300 w-1/2 p-4 mx-auto mt-4">
+        <h1>About Smart Contact Manager 2.0</h1>
+        <h2 data-th-text=${mod}></h2>
+        <div th:replace="~{base :: parent(~{::#second})}">
+            <p id="first">this is a dynamic html content one</p>
+            <p id="second">this is a dynamic html content two</p>
+            <p id="third">this is a dynamic html content three</p>
+        </div>
+        
+    </div>
+</body>
+
+</html>

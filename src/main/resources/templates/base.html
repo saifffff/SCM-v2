@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" th:fragment="base_layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Page</title>
+    <link rel="stylesheet" data-th-href="@{/css/output.css}"/>
+</head>
+
+
+<body>
+    
+    <div th:fragment="parent(content)">
+        <div>
+            <h1>This is a fragment and below is its argument</h1>
+            <section th:insert="${content}"></section>
+        </div>
+    </div>
+
+</body>
+
+</html>
