@@ -8,6 +8,7 @@ th:fragment="base_layout(content)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title th:text="${title}">Base Page</title>
     <link rel="stylesheet" data-th-href="@{/css/output.css}"/>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
 
@@ -16,6 +17,8 @@ th:fragment="base_layout(content)">
     <section th:replace="${content}">
 
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 
 </body>
 
