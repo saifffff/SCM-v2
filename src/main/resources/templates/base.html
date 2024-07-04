@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" 
 xmlns:th="http://www.thymeleaf.org" 
-th:fragment="base_layout(content)">
+th:fragment="base_layout(content,script)">
 
 <head>
     <meta charset="UTF-8">
@@ -19,6 +19,7 @@ th:fragment="base_layout(content)">
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <th:block th:replace="${script}"></th:block>
 
 </body>
 

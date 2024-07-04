@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"
-th:replace="~{base::base_layout(~{::section})}"
+th:replace="~{base::base_layout(~{::section},~{::script})}"
 >
 
 <head>
@@ -16,6 +16,11 @@ th:replace="~{base::base_layout(~{::section})}"
             <h1>Services Smart Contact Manager 2.0</h1>
         </div>
     </section>
+
+
+    <script>
+        console.log("This is services page...");
+    </script>
 </body>
 
 </html>
