@@ -10,20 +10,21 @@ public class MainController {
     @RequestMapping("/home")
     public String home(Model model){
         System.out.println("requested home");
-        model.addAttribute("mod", "Hello world");
-        model.addAttribute("github", "https://github.com/saifffff");
+        model.addAttribute("title", "SCM 2.0 - Home");
         return "home";
     }
 
     @RequestMapping("/about")
     public String about (Model model) {
         System.out.println("about requested");
+        model.addAttribute("title", "SCM 2.0 - About");
         return "about";
     }
 
     @RequestMapping("/services")
     public String services (Model model) {
         System.out.println("services requested");
+        model.addAttribute("title", "SCM 2.0 - Services");
         return "services";
     }
 

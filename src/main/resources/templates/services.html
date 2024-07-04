@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+th:replace="~{base::base_layout(~{::section})}"
+>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title th:text="${title}">Services</title>
     <link rel="stylesheet" data-th-href="@{/css/output.css}"/>
 </head>
 
 <body>
-    <div class="bg-red-300 w-1/2 p-4 mx-auto mt-4">
-        <h1>Services Smart Contact Manager 2.0</h1>
-        <h2 data-th-text=${mod}></h2>
-        <p>My Github Link : <a data-th-href=${github}>Github</a></p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt cumque ullam voluptatibus.
-            Reiciendis,
-            provident. Necessitatibus dolorum rerum, perspiciatis laudantium ut quos, hic blanditiis dolor debitis
-            similique
-            vero ipsa commodi cum adipisci animi minima consequatur natus nulla illum. Expedita molestias quis adipisci,
-            corrupti laudantium illo aperiam nulla quisquam? Maxime, modi.</p>
-    </div>
+    <section>
+        <div class="bg-red-300 w-1/2 p-4 mx-auto mt-4">
+            <h1>Services Smart Contact Manager 2.0</h1>
+        </div>
+    </section>
 </body>
 
 </html>
