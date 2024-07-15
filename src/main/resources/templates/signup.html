@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en"
 th:replace="~{base::base_layout(~{::section},~{::script})}"
 >
@@ -6,20 +7,18 @@ th:replace="~{base::base_layout(~{::section},~{::script})}"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title th:text="${title}">Services</title>
-    <link rel="stylesheet" data-th-href="@{/css/output.css}"/>
+    <title th:text="${title}">About</title>
 </head>
 
 <body>
     <section>
         <div class="bg-red-300 w-1/2 p-4 mx-auto mt-16">
-            <h1>Services Smart Contact Manager 2.0</h1>
+            <h1>About Smart Contact Manager 2.0 Sign up page</h1>
         </div>
     </section>
 
-
     <script>
-        console.log("This is services page...");
+        console.log("this is signup page...");
     </script>
 </body>
 

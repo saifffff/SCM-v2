@@ -28,5 +28,28 @@ public class MainController {
         return "services";
     }
 
+    @RequestMapping("/contact")
+    public String contact(Model model){
+        System.out.println("request contact"); 
+        model.addAttribute("title", "SCM 2.0 - Contact Us");
+        return "contact";
+    }
+
+
+    @RequestMapping("/login")
+    public String login(Model model){
+        System.out.println("requested login"); 
+        model.addAttribute("title", "SCM 2.0 - Login");
+        return "login";
+    }
+
+
+    @RequestMapping("/signup")
+    public String signup(Model model){
+        System.out.println("request signup"); 
+        model.addAttribute("title", "SCM 2.0 - Sign Up");
+        return "signup";
+    }
+
 
 }

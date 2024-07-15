@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" 
+<html 
+class="dark"
+lang="en" 
 xmlns:th="http://www.thymeleaf.org" 
 th:fragment="base_layout(content,script)">
 
@@ -12,7 +14,10 @@ th:fragment="base_layout(content,script)">
 </head>
 
 
-<body>
+<body 
+    class="dark:bg-gray-900 dark:text-white"
+    
+>
     <!-- navbar starts -->
   <div class="nav" data-th-replace="navbar::navbar">
 
