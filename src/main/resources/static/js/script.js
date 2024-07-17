@@ -1,5 +1,7 @@
 console.log("loaded.. script")
 
+// dark/light theme implementation start
+
 //change theme function
 const changeTheme = (currentTheme) => {
     // set to webpage
@@ -40,6 +42,12 @@ const getTheme = () =>{
 let currentTheme = getTheme();
 
 changeTheme(currentTheme);
+
+
+// dark/light theme implementation ends here
+
+
+
 
 
 
