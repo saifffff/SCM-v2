@@ -1,4 +1,4 @@
-console.log("loaded.. script.js")
+console.log("loaded.. script")
 
 //change theme function
 const changeTheme = (currentTheme) => {
@@ -7,11 +7,17 @@ const changeTheme = (currentTheme) => {
     
     // listener 
     const themebtn = document.querySelector("#change_theme_btn");
-    //console.log("theme btn = "+ themebtn);
     themebtn.addEventListener("click", () =>{
         console.log("change theme button clicked");
-        changeTheme(currentTheme === "light" ? "dark" : "light");
-        setTheme(currentTheme);
+        let toggle = currentTheme;
+        if(toggle === "light"){
+            toggle = "dark";
+        }else{
+            toggle = "light";
+        }
+        changeTheme(toggle);
+        document.querySelector('html').classList.remove(currentTheme);
+        setTheme(toggle);
     })
 }
 
@@ -19,7 +25,6 @@ const changeTheme = (currentTheme) => {
 // function to store current theme into local storage
 const setTheme = (Theme) =>{
     localStorage.setItem("theme", Theme);
-    console.log("saved current theme to local storage: +"+currentTheme);
 }
 
 
@@ -33,6 +38,8 @@ const getTheme = () =>{
 }
 
 let currentTheme = getTheme();
+
+changeTheme(currentTheme);
 
 
 
